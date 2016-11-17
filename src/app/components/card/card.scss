@@ -1,8 +1,63 @@
 .card {
+	background-color: #DFEAEA;
+	border: 1px solid #D0D0D0;
+	box-shadow: 0 1px 4px #CCD2D2;
+	vertical-align: top;
 	display: inline-block;
-	width: 300px;
-	height: 300px;
-	border: 1px solid #000;
-	margin: 10px 10px 0 0;
+	width: 320px;
+	height: 350px;
+	margin: 20px;
 	padding: 10px;
+	img {
+		border: 1px solid #D0D0D0;
+		width: 150px;
+		height: 150px
+	}
+	.right-card-info {
+		float: right
+
+	}
+	.left-card-info {
+		float: left
+	}
+	.album-titles {
+		width: 100%;
+	}
+}
+
+.albom-ammount {
+	vertical-align: bottom;
+	margin: 5px;
+	display: block;
+	input {
+		width: 30px
+	}
+}
+
+.card-content {
+	margin: 10px 0;
+	height: 150px;
+	display: block;
+}
+
+.short-info {
+	height: 105px;
+	margin: auto 5px
+}
+
+.card {
+	button {
+		background-color: #2196F3;
+		border: none;
+		border-radius: 2px;
+		color: white;
+		padding: 10px;
+		&:hover {
+			background-color: #5C94C1;
+		}
+	}
+	input {
+		height: 40px;
+		width: 50px;
+	}
 }

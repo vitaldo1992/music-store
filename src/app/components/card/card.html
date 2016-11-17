@@ -1,18 +1,24 @@
 <div class="card">
 	<h3>{{card.product.title}}</h3>
-	<div>Artist: {{card.product.artist}}</div>
-	<div>
-		Album: {{card.product.album}}
-		<div>
-			<img ng-src="{{card.product.albumCover}}" alt="image-{{card.product.album}}">
-		</div>
+	<div class="album-titles">
+		<div>Artist: {{card.product.artist}}</div>
+		<div>Album: {{card.product.album}}</div>
 	</div>
-	<div>Genre: {{card.product.genre}}</div>
-	<div>Cost: {{card.product.cost}}</div>
-	<div>Date: {{card.product.releaseDate | date: 'yyyy'}}</div>
-	<div ng-if="card.product.count">
-		<input type="number" ng-model="card.count">
-		<button ng-click="card.buy();">Buy now!</button>
+	<div class="card-content">
+		<div class="left-card-info">
+			<img class="im" ng-src="{{card.product.albumCover}}" alt="image-{{card.product.album}}">
+		</div>
+		<div class="right-card-info">
+			<div class="short-info">
+				<div>Genre: {{card.product.genre}}</div>
+				<div>Cost: {{card.product.cost}}</div>
+				<div>Date: {{card.product.releaseDate | date: 'yyyy'}}</div>
+			</div>
+			<div ng-if="card.product.count" class="albom-ammount">
+				<input type="number" ng-model="card.count">
+				<button ng-click="card.buy();">Buy now!</button>
+			</div>
+		</div>
 	</div>
 	<hr>
 
